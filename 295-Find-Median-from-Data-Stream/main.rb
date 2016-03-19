@@ -127,8 +127,8 @@ class MedianFinder
     def find_median()
         case @min_heap.size - @max_heap.size
         when 0
-        	return @min_heap.top if @max_heap.top.nil?
-        	return @max_heap.top if @min_heap.top.nil?
+            return @min_heap.top if @max_heap.top.nil?
+            return @max_heap.top if @min_heap.top.nil?
             (@min_heap.top + @max_heap.top) / 2.0
         when -1
             @max_heap.top + 0.0        # Output must be float
