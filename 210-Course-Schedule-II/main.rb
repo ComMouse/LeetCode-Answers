@@ -11,9 +11,9 @@ end
 # Class Graph
 # ---------------------
 class Graph
-	# Constructor.
-	# @param {Integer} point_num
-	# @param {Integer[][]} edges
+    # Constructor.
+    # @param {Integer} point_num
+    # @param {Integer[][]} edges
     def initialize(point_num, edges)
         @num = point_num
         @graph = Array.new(@num) { [] }
