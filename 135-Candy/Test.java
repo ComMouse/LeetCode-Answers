@@ -27,6 +27,13 @@ public class Test
 
         int[] testCase7 = {1, 2, 2, 2, 3};
         test(testCase7, 7);
+
+        int size = 12000;
+        int[] testCase8 = new int[size];
+        for (int i = 0; i < size; ++i) {
+            testCase8[i] = size - i;
+        }
+        test(testCase8, (1 + size) * size / 2);
     }
     
     public static void test(int[] testCase, int key)
